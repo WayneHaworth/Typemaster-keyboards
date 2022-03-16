@@ -1,1 +1,110 @@
-body { color: red; }
+:root, button {
+  font-family: 'Barlow', sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  color: #162542;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+p {
+  color: #7b8bad;
+  line-height: 1.65rem;
+}
+
+.container {
+  padding: 24px;
+  margin: 0 auto;
+}
+
+button {
+  border: none;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button.btn-main {
+  color: #ffffff;
+  background-color: #f16718;
+}
+
+button.btn-main:hover {
+  background-color: #ff9b62;
+}
+
+button.btn-secondary {
+  color: #162542;
+  background-color: #e8eff2;
+}
+
+button.btn-secondary:hover {
+  color: #e8eff2;
+  background-color: #162542;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+}
+
+.product-details .col-1 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.product-details .col-1 .product-details--cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product-details .col-1 .product-details--cta p {
+  display: inline-block;
+  color: #7b8bad;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 32px;
+}
+
+.product-details .col-2 img {
+  height: 331px;
+  left: 24px;
+  position: relative;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+/*# sourceMappingURL=style.css.map */
