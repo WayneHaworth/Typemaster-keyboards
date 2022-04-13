@@ -96,9 +96,14 @@ header {
 .intro {
     display: flex;
     flex-direction: column;
+    margin-bottom: 6rem;
 
-    p {
-        text-align: center;
+    .intro__text {
+        
+        p {
+            text-align: center;
+            margin: 0 1.5rem;
+        }
     }
 
     .intro__images {
@@ -123,38 +128,5 @@ header {
     .intro__image-right {
         background-image: url(assets/mobile/image-glass-and-keyboard.jpg);
         width: 13.75rem;        
-    }
-}
-
-.features {
-
-    .features__block {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin: 3rem 1.5rem;
-
-        .features__icon {
-            background: $dark-orange;
-            width: 4.063rem;
-            height: 4.063rem;
-            border-radius: 1rem;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-    }    
-}
-
-footer {
-    color: $medium-grey;
-    text-align: center;
-    margin-bottom: 3rem;
-    
-    span {
-        font-weight: bold;
     }
 }
