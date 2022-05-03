@@ -33,8 +33,21 @@ p {
 }
 
 .container {
-  padding: 24px;
-  margin: 0 auto;
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1100px) {
+  .container {
+    max-width: 1100px;
+  }
 }
 
 button {
@@ -87,6 +100,12 @@ header {
   }
 }
 
+@media (min-width: 1440px) {
+  header {
+    margin: 2rem 0;
+  }
+}
+
 header img {
   width: 40px;
   height: 40px;
@@ -126,12 +145,18 @@ header img {
   }
 }
 
+@media (min-width: 1440px) {
+  .cta .cta__intro {
+    margin: 0;
+  }
+}
+
 .cta .cta__footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 2rem 0 4rem 0;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .cta .cta__footer p {
@@ -159,6 +184,18 @@ header img {
   }
 }
 
+@media (min-width: 1440px) {
+  .cta .cta__image:after {
+    content: "";
+    width: 255px;
+    height: 240px;
+    background-color: #e8eff2;
+    border-radius: 20px;
+    position: absolute;
+    right: -286px;
+  }
+}
+
 .intro {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -167,6 +204,16 @@ header img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (min-width: 1440px) {
+  .intro {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 30rem;
+  }
 }
 
 .intro p {
@@ -192,6 +239,13 @@ header img {
   }
 }
 
+@media (min-width: 1440px) {
+  .intro .intro__images {
+    margin: 1rem 0;
+    height: 30rem;
+  }
+}
+
 .intro .intro__image {
   border-radius: 20px;
   background-size: cover;
@@ -214,6 +268,22 @@ header img {
   }
 }
 
+@media (min-width: 1440px) {
+  .intro .intro__image-left {
+    width: 255px;
+    background-image: url(assets/desktop/image-phone-and-keyboard.jpg);
+  }
+  .intro .intro__image-left:before {
+    content: "";
+    width: 255px;
+    height: 240px;
+    background-color: #e8eff2;
+    border-radius: 20px;
+    position: absolute;
+    left: -286px;
+  }
+}
+
 .intro .intro__image-right {
   background-image: url(assets/mobile/image-glass-and-keyboard.jpg);
   width: 64%;
@@ -224,6 +294,13 @@ header img {
 @media (min-width: 768px) {
   .intro .intro__image-right {
     background-image: url(assets/tablet/image-glass-and-keyboard.jpg);
+  }
+}
+
+@media (min-width: 1440px) {
+  .intro .intro__image-right {
+    width: 445px;
+    background-image: url(assets/desktop/image-glass-and-keyboard.jpg);
   }
 }
 
@@ -250,12 +327,39 @@ header img {
   .intro .intro__text h2 {
     margin: 4rem 2rem;
   }
+}
+
+@media (min-width: 768px) and (min-width: 1440px) {
+  .intro .intro__text h2 {
+    margin: 4rem 0;
+  }
+}
+
+@media (min-width: 768px) {
   .intro .intro__text p {
     margin: 3rem;
-    max-width: 43ch;
+    max-width: 60ch;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .intro .intro__text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    place-content: center;
+    margin-left: 7.813rem;
+    width: 15.938rem;
+  }
+  .intro .intro__text h2 {
+    margin-bottom: 2rem;
+  }
+  .intro .intro__text p {
+    margin: 0;
   }
 }
 
@@ -269,6 +373,21 @@ header img {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     margin: 3rem 0;
+  }
+}
+
+@media (min-width: 1160px) {
+  .features {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 0 10rem 0;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .features {
+    margin: 10rem 0 10rem 0;
   }
 }
 
@@ -302,6 +421,21 @@ header img {
         -ms-flex-align: start;
             align-items: start;
     margin: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .features .features__block {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .features .features__block {
+    margin: 0;
   }
 }
 
